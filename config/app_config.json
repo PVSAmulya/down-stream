@@ -1,0 +1,32 @@
+{
+    "about": "This file contains all the general configuration related to application environment",
+    "http": {
+        "port": 3000
+    },
+    "swapi": {
+        "host": "https://swapi.co"
+    },
+    "logs": {
+        "debug": false,
+        "info": true,
+        "warn": true,
+        "error": true
+    },
+    "loggerConfig": {
+        "logsFileName": "errorlogs.log",
+        "logsDirName": "logs",
+        "datePattern": ".MM-dd-yyyyTmm",
+        "handleExceptions": true,
+        "zippedArchive": true,
+        "fileLogsLevel": "error",
+        "maxFiles": 30,
+        "emailLogs": false,
+        "emailLogsLevel": "error",
+        "subject": "Express Take Home Project -- Technical Error -- Web Server"
+    },
+    "links": {
+        "apiPrefix": "/api",
+        "hostPrefix": "/api"
+    }
+
+}

@@ -2,9 +2,9 @@ const assert = require('assert');
 const request = require('supertest');
 const app = require('./app');
 
-describe('Simplified Star Wars API', function() {
+describe('Simplified Star Wars API', function () {
 
-    describe('GET /people/:id', function() {
+    describe('GET /people/:id', function () {
 
         it('should return a person with first_name and last_name', async () => {
             const response = await request(app)
@@ -65,7 +65,7 @@ describe('Simplified Star Wars API', function() {
 
     });
 
-    describe('GET /planets/:id', function() {
+    describe('GET /planets/:id', function () {
 
         it('should return a name of the planet', async () => {
             const response = await request(app)
@@ -91,8 +91,7 @@ describe('Simplified Star Wars API', function() {
 
             assert.deepStrictEqual(response.body, {
                 name: 'Hoth',
-                count: {
-                }
+                count: {}
             });
         });
 
