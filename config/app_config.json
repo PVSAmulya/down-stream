@@ -1,0 +1,8 @@
+{
+    "about": "This file contains all the general configuration related to application environment",
+    "links": {
+        "apiPrefix": "/api",
+        "hostPrefix": "/api"
+    }
+
+}
